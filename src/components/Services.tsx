@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, ShieldCheck, Users, Sparkles } from 'lucide-react';
+import { ShieldCheck, Users, Sparkles } from 'lucide-react';
 
 const services = [
   {
@@ -28,7 +27,7 @@ const Services = () => {
     <section id="services" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -36,14 +35,14 @@ const Services = () => {
           >
             Our Core Services
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-gray-500 max-w-2xl mx-auto text-lg"
           >
-            We believe that clarity, understanding, and professional guidance are beneficial 
+            We believe that clarity, understanding, and professional guidance are beneficial
             for all relationships, helping you overcome challenges and enhance your bonds.
           </motion.p>
         </div>
@@ -66,10 +65,10 @@ const Services = () => {
               <p className="text-gray-600 leading-relaxed">
                 {service.description}
               </p>
-              <motion.button 
+              <motion.button
                 className="mt-6 text-primary font-bold flex items-center gap-2 group"
               >
-                Learn More 
+                Learn More
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </motion.button>
             </motion.div>

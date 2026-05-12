@@ -55,7 +55,6 @@ const BookSlot = () => {
               {[1, 2, 3].map((i) => {
                 const isCompleted = step > i;
                 const isActive = step === i;
-                const isPending = step < i;
 
                 return (
                   <div key={i} className="flex flex-col items-center gap-3">
